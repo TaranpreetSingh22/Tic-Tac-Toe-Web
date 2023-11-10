@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#result-section{
+  height: 10vh;
+  margin: 10%;
+}
+
+#result-div{
+  width: 100%;
+  height: 100%;
+}
+
+#btn-section{
+  margin-top: 10%;
+  padding: 5%;
+  width: 100vw;
+}
+
+.btn{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 2px solid black;
+  font-size: 1.5em;
+}
+
+.btn div{
+  width: 30%;
+  font-size: 1.5em;
+  margin-top: 3%;
+}
+
+@media screen and (min-width:768px) {
+  .btn{
+    width: 50%;
+    margin: 1% auto;
+  }
+
+  #btn-section{
+    margin-top: 3%;
+  }
+
+  #result-section{
+    margin: 3%;
+  }
+
+  #result-section div{
+    width: 60%;
+    margin: 1px auto;
+  }
+}
+
+@media screen and (min-width:1349px){
+  #result-section div{
+    width: 30%;
+    margin: 1px auto;
+  }
+
+  .btn{
+    width: 30%;
+    margin: 1% auto;
+  }
+
+  #btn-section{
+    margin-top: 0%;
+    padding: 0;
+  }
+}
+
