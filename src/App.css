@@ -1,80 +1,77 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body {
+  background-color: #282c34;
+}
+.App {
+  text-align: center;
 }
 
-#result-section{
-  height: 10vh;
-  margin: 10%;
+.App{
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: #282c34;
+  color: white;
 }
 
-#result-div{
-  width: 100%;
-  height: 100%;
-}
-
-#btn-section{
-  margin-top: 10%;
+#title{
+  font-size: 2em;
+  color: lawngreen;
   padding: 5%;
-  width: 100vw;
+  font-weight: bold;
 }
 
 .btn{
+  width: 85%;
+  margin: 2% auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 2%;
   justify-content: center;
-}
-
-input{
-  width: 100%;
-  height: 100%;
-  outline: none;
-  border: 2px solid black;
-  font-size: 1.5em;
 }
 
 .btn div{
   width: 30%;
+  height: 130px
+}
+
+input[type="button"]{
   font-size: 1.5em;
-  margin-top: 3%;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+#clear-btn{
+  width: 30%;
+  margin: 1% auto;
 }
 
 @media screen and (min-width:768px) {
   .btn{
     width: 50%;
-    margin: 1% auto;
   }
 
-  #btn-section{
-    margin-top: 3%;
-  }
-
-  #result-section{
-    margin: 3%;
-  }
-
-  #result-section div{
-    width: 60%;
-    margin: 1px auto;
+  .btn div{
+    width: 30%;
+    height: 110px;
   }
 }
 
 @media screen and (min-width:1349px){
-  #result-section div{
-    width: 30%;
-    margin: 1px auto;
-  }
-
   .btn{
     width: 30%;
-    margin: 1% auto;
   }
 
-  #btn-section{
-    margin-top: 0%;
-    padding: 0;
+  .btn div{
+    height: 160px;
+  }
+
+  #clear-btn{
+    width: 20%;
+    font-size: 1.5em;
+  }
+
+  #title{
+    font-size: 3em;
+    padding: 3%;
   }
 }
-
